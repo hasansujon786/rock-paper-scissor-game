@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vue.js"></script>
+    <title>The Game</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but learning-vue2 doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <div class="main-body container">
+        <button @click="resetGame" class="button button--stop">Reset</button>
+        <div class="score-board border">
+          <h1 id="user">USER</h1>
+          <h1 id="comp">COMP</h1>
+          <div class="score-box">
+            <h1>{{ userScore }}</h1>
+            <h1>{{ compScore }}</h1>
+          </div>
+          <h3>{{ result }}</h3>
+          <!--
+            <p>compChoice: {{ compChoice }}</p>
+            <p>userChoice: {{ userChoice }}</p>
+          -->
+        </div>
+        <figure @click="start" class="comp-img-holder">
+          <img
+            v-show="selector === 0"
+            class="img rounded-circle border"
+            src="img/paper.jpg"
+            alt=""
+          />
+          <img
+            v-show="selector === 1"
+            class="img rounded-circle border"
+            src="img/scissor.jpg"
+            alt=""
+          />
+          <img
+            v-show="selector === 2"
+            class="img rounded-circle border"
+            src="img/rock.jpg"
+            alt=""
+          />
+        </figure>
+        <section class="text-center">
+          <div v-if="gameIsRunning" class="user-cards">
+            <div class="grid">
+              <figure
+                @click="getUserChoice('paper');"
+                :id="paper"
+                class="user-image rounded-circle"
+              >
+                <img
+                  class="img border rounded-circle"
+                  src="img/paper.jpg"
+                  alt=""
+                />
+              </figure>
+              <figure
+                @click="getUserChoice('scissor')"
+                :id="scissor"
+                class="user-image rounded-circle"
+              >
+                <img
+                  class="img border rounded-circle"
+                  src="img/scissor.jpg"
+                  alt=""
+                />
+              </figure>
+              <figure
+                @click="getUserChoice('rock')"
+                :id="rock"
+                class="user-image rounded-circle"
+              >
+                <img
+                  class="img border rounded-circle"
+                  src="img/rock.jpg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div v-else>
+            <button @click="start" class="button button--primary">
+              Start New Game
+            </button>
+          </div>
+          <p class="tips">Click on the computer's hand to continue the game</p>
+        </section>
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
