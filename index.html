@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/vue.js"></script>
     <title>Rock Paper Scissor</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
         <div class="score-board border">
           <h1 id="user">USER</h1>
           <h1 id="comp">COMP</h1>
-          <div class="score-box">
+          <div class="scores">
             <h1>{{ userScore }}</h1>
             <h1>{{ compScore }}</h1>
           </div>
@@ -36,19 +36,19 @@
           <img
             v-show="selector === 0"
             class="img rounded-circle border"
-            src="img/paper.jpg"
+            src="assets/img/paper.jpg"
             alt=""
           />
           <img
             v-show="selector === 1"
             class="img rounded-circle border"
-            src="img/scissor.jpg"
+            src="assets/img/scissor.jpg"
             alt=""
           />
           <img
             v-show="selector === 2"
             class="img rounded-circle border"
-            src="img/rock.jpg"
+            src="assets/img/rock.jpg"
             alt=""
           />
         </figure>
@@ -62,7 +62,7 @@
               >
                 <img
                   class="img border rounded-circle"
-                  src="img/paper.jpg"
+                  src="assets/img/paper.jpg"
                   alt=""
                 />
               </figure>
@@ -73,7 +73,7 @@
               >
                 <img
                   class="img border rounded-circle"
-                  src="img/scissor.jpg"
+                  src="assets/img/scissor.jpg"
                   alt=""
                 />
               </figure>
@@ -84,7 +84,7 @@
               >
                 <img
                   class="img border rounded-circle"
-                  src="img/rock.jpg"
+                  src="assets/img/rock.jpg"
                   alt=""
                 />
               </figure>
@@ -101,6 +101,6 @@
     </div>
 
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

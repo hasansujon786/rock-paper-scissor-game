@@ -1,0 +1,119 @@
+body {
+  color: #1C182D;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.comp-img-holder {
+  height: 290px;
+  width: 290px;
+  margin: 0 auto 40px; }
+
+.img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer; }
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0 100px;
+  margin: 20px; }
+
+/* ScoreBox
+  -------------------------------------- */
+.score-board {
+  width: 30em;
+  padding-top: 15px;
+  height: 15em;
+  margin: 30px auto 30px;
+  text-align: center;
+  border-radius: 13px; }
+
+.scores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 240px;
+  margin: -50px auto 0;
+  padding: 0; }
+  .scores h1 {
+    font-size: 6rem; }
+
+#comp,
+#user {
+  display: inline-block;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-shadow: #1C182D; }
+
+#user {
+  right: 130px; }
+
+#comp {
+  left: 130px; }
+
+/* buttons
+  -------------------------------------- */
+/* Images
+  -------------------------------------- */
+#scissor,
+#rock,
+#paper {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 4px solid #000;
+  margin-top: -50px; }
+
+.user-image {
+  height: 170px;
+  width: 170px;
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
+  .user-image:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.tips {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  opacity: 0.4; }
+
+.button {
+  border: 1px solid #dee2e6;
+  background-color: transparent;
+  padding: 10px 60px;
+  border-radius: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+  .button:active, .button:focus, .button:hover {
+    color: #eee;
+    background: #1C182D; }
+
+.button--primary {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.button--stop {
+  float: right;
+  padding: 10px 30px; }
+  .button--stop:active, .button--stop:focus, .button--stop:hover {
+    background: #ff2566;
+    padding: 10px 50px; }

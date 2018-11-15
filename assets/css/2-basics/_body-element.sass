@@ -1,0 +1,88 @@
+// body
+//   background-color: white
+//   font-size: 14px
+//   line-height: 1.6
+//   font-family: 'Fira Sans', sans-serif
+//   color: #666
+//   -webkit-font-smoothing: antialiased
+//   -webkit-text-size-adjust: 100%
+
+
+
+body
+  color: #1C182D
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+.comp-img-holder
+  height: 290px
+  width: 290px
+  margin: 0 auto 40px
+.img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  cursor: pointer
+
+.grid
+  display: flex
+  justify-content: space-around
+  padding: 0 100px
+  margin: 20px
+
+
+
+
+
+/* ScoreBox
+  -------------------------------------- */
+.score-board
+  width: 30em
+  padding-top: 15px
+  height: 15em
+  margin: 30px auto 30px
+  text-align: center
+  border-radius: 13px
+.scores
+  display: flex
+  justify-content: space-between
+  width: 240px
+  margin: -50px auto 0
+  padding: 0
+  h1
+    font-size: 6rem
+
+#comp,
+#user
+  display: inline-block
+  position: relative
+  font-size: 3.5rem
+  font-weight: 600
+  text-shadow: #1C182D
+#user
+  right: 130px
+#comp
+  left: 130px
+/* buttons
+  -------------------------------------- */
+
+
+/* Images
+  -------------------------------------- */
+#scissor,
+#rock,
+#paper
+  transform: scale(1.3)
+  border: 4px solid #000
+  margin-top: -50px
+.user-image
+  height: 170px
+  width: 170px
+  transition: all 300ms ease-out
+  &:hover
+    transform: scale(1.1)  
+
+.tips
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+  letter-spacing: 0.5px
+  font-size: 16px
+  opacity: 0.4
+
