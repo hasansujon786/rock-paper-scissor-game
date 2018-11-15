@@ -15,7 +15,8 @@ new Vue({
       rock: '',
       paper: '',
       compScore: 0,
-      userScore: 0
+      userScore: 0,
+      stopButtonClicked: '',
     }
   },
   methods: {
@@ -45,6 +46,10 @@ new Vue({
       this.compScore = 0
       this.gameIsRunning = false
       this.allowToTurn = true
+      this.stopButtonClicked = 'button--stop--rotate'
+      setTimeout(() => {
+        this.stopButtonClicked = ''
+      }, 300);
     },
     getUserChoice(choice) {
       if (!this.allowToTurn) {

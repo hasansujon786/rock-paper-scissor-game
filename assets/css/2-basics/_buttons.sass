@@ -19,12 +19,18 @@
 .button--primary 
   margin-top: 10px
   margin-bottom: 30px
+  
 
 .button--stop
-  float: right
-  padding: 10px 30px
-  &:active,
-  &:focus,
-  &:hover 
-    background: #ff2566
-    padding: 10px 50px
+  width: 40px
+  position: absolute
+  right: -30px
+  top: 10px
+  transition: all 300ms ease-out
+  &:hover ,
+    cursor: pointer
+.button--stop--rotate
+  transform: rotate(180deg) scale(1.2)
+
+
+    
